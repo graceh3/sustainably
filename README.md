@@ -1,4 +1,3 @@
-# <i>sustainably</i>
 ![Image](sustainably_cover1.png)
 
 Recommend sustainable alternatives to popular fast-fashion handbags based on style and price similarities.
