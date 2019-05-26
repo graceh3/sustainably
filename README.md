@@ -52,7 +52,7 @@ The out-of-the-box pre-trained model did not sufficiently extract features uniqu
 
 ## Next Steps
 - <i>Get more data.</i>
-    - Scrape more bag images from other ethical sources (like consignment shops that recycle used products) as well as sustainable brands that create new project (like nanushka)
+    - Scrape more bag images from other ethical sources (like consignment shops) and conduct more research into ethical brands (like nanushka)
 - <i>Refine model.</i>
     - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to calculate minkowski distances
 - <i>Expand product line.</i>
