@@ -51,6 +51,9 @@ Below are some of the results of the top 3 most similar ethical bags for a parti
 The out-of-the-box pre-trained model did not sufficiently extract features unique to handbags to recommend the most similar handbags, as demonstrated in the results above.
 
 ## Next Steps
-- <i>Get more data.</i> Scrape more bag images from other ethical sources (like consignment shops that recycle used products) as well as sustainable brands that create new project (like nanushka)
-- <i>Refine model.</i> Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to calculate minkowski distances
-- <i>Expand product line.</i> Apply same model/methodology for shoes and clothing.
+- <i>Get more data.</i>
+    - Scrape more bag images from other ethical sources (like consignment shops that recycle used products) as well as sustainable brands that create new project (like nanushka)
+- <i>Refine model.</i>
+    - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to calculate minkowski distances
+- <i>Expand product line.</i>
+    - Apply same model/methodology for shoes and clothing.
