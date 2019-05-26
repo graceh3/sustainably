@@ -20,11 +20,20 @@ __Data Source__
 
 __Methodology__
 
+1. <i>Conduct research.</i>
+    - Get list of ethical brands and unethical brands that create handbags.
+2. <i>Gather data. </i>
+    - Scrape bag images, names, and prices.
+3. <i>Extract features. </i>
+    - Pass each bag image into pre-trained VGG16 model to extract features in matrix form.
+3. <i>Calculate distances. </i>
+    - Flatten feature matrices into vectors and calculate minkowski distances for each unethical bag to each ethical bag.
+4. <i>Create recommendation function. </i>
+    - Sort distance calculations in ascending order and yield x-number of most similar bag images (i.e. shortest distances)
 
-***
-## Modeling
 
-__VGG16__
+__Modeling__
+
 
 
 ***
@@ -57,6 +66,8 @@ The out-of-the-box pre-trained model did not sufficiently extract features uniqu
 - <i>Get more data.</i>
     - Scrape more bag images from other ethical sources (like consignment shops) and conduct more research into ethical brands (like nanushka)
 - <i>Refine model.</i>
-    - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to find similar handbags by calculating minkowski distances
+    - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to conduct supervised learning so that model can predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from the new model to find similar handbags by calculating minkowski distances or some other distance metric
+- <i>Incorporate price.</i>
+    - Be able to recommend products that are not only most similar in style but also in price.
 - <i>Expand product line.</i>
-    - Apply same model/methodology for shoes and clothing.
+    - Apply same methodology for shoes and clothing.
