@@ -14,6 +14,10 @@ __Data Source__
 - [good on you](https://goodonyou.eco/) for sustainability ratings on fashion brands
 - Web-scraped 1,500 images from 20 different brands using Selenium and BeautifulSoup
 
+<p align='center'>
+ <img width="550" alt="brands" height="300" src="images/brands.jpg">
+</p>
+
 __Methodology__
 
 
