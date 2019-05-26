@@ -7,7 +7,6 @@ Recommend sustainable alternatives to popular fast-fashion handbags based on sty
 
 
 
-
 ***
 ## Data Source & Methodology
 
@@ -15,7 +14,7 @@ __Data Source__
 - [good on you](https://goodonyou.eco/) for sustainability ratings on fashion brands
 - Web-scraped 1,500 images from 20 different brands using Selenium and BeautifulSoup
 
-__Methodology__<br>
+__Methodology__
 
 
 ***
@@ -27,7 +26,7 @@ __VGG16__
 ***
 ## Results
 
-Below are some of the results of the top 3 most similar ethical bags for a particular unethical bag. The model seems to be able to discern some high-level shapes and saturation but fails to accurate recommend the same bag type and finer details like color and texture.
+Below are some of the results of the top 3 most similar ethical bags for a particular unethical bag. The model seems to be able to discern some high-level shapes and saturation but fails to accurately recommend the same bag type and finer details like color and texture.
 
 <p align='center'>
  <img width="600" alt="results1" height="220" src="images/results1.png">
@@ -54,6 +53,6 @@ The out-of-the-box pre-trained model did not sufficiently extract features uniqu
 - <i>Get more data.</i>
     - Scrape more bag images from other ethical sources (like consignment shops) and conduct more research into ethical brands (like nanushka)
 - <i>Refine model.</i>
-    - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to calculate minkowski distances
+    - Customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to find similar handbags by calculating minkowski distances
 - <i>Expand product line.</i>
     - Apply same model/methodology for shoes and clothing.
