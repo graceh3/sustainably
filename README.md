@@ -6,6 +6,8 @@ Recommend sustainable alternatives to popular fast-fashion handbags based on sty
 
 
 
+
+
 ***
 ## Data Source & Methodology
 
@@ -25,7 +27,6 @@ __VGG16__
 ***
 ## Results
 
-With our baseline model,
 
 
 
@@ -33,8 +34,9 @@ With our baseline model,
 ***
 ## Takeaways
 
-The out-of-the-box pretained model did not sufficiently extract features unique to handbags to recommend the most similar handbags, as demonstrated in the results above.
+The out-of-the-box pre-tained model did not sufficiently extract features unique to handbags to recommend the most similar handbags, as demonstrated in the results above.
 
 ## Next Steps
-- scrape more bag images
+- scrape more bag images from other ethical sources (like consignment shops that recycle used products) as well as sustainable brands that create new project (like nanushka)
 - customize pre-trained models (VGG16 and/or RESNET50) by freezing lower layers and training upper layers with bag images to have model predict different bag types (shoulder bag, tote bag, clutch, backpack, bum bag); extract features from this model to calculate minkowski distances
+- down the line, expand product line to include shoes, then clothing
