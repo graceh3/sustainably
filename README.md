@@ -9,7 +9,7 @@ Recommend sustainable alternatives to popular fast-fashion handbags based on sty
 
 
 
-## Data Source & Methodology
+## Approach
 
 __Data Source__
 - [good on you](https://goodonyou.eco/) for sustainability ratings on fashion brands
