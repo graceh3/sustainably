@@ -8,7 +8,7 @@ Recommend sustainable alternatives to popular fast-fashion handbags based on sty
 
 
 
-***
+
 ## Data Source & Methodology
 
 __Data Source__
@@ -41,7 +41,7 @@ __Modeling__
 </p>
 
 
-***
+
 ## Results
 
 Below are some of the results of the top 3 most similar ethical bags for a particular unethical bag. The model seems to be able to discern some high-level shapes and saturation but fails to accurately recommend the same bag type and finer details like color and texture.
@@ -62,7 +62,7 @@ Below are some of the results of the top 3 most similar ethical bags for a parti
  <img width="600" alt="results4" height="220" src="images/results4.png">
 </p>
 
-***
+
 ## Takeaways
 
 The out-of-the-box pre-trained model did not sufficiently extract features unique to handbags to recommend the most similar handbags, as demonstrated in the results above.
