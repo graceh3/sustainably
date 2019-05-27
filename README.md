@@ -37,7 +37,7 @@ __Modeling__
 
 <b>VGG16</b>
 <p align='center'>
- <img width="300" alt="vgg16" height="400" src="images/vgg16.png">
+ <img width="300" alt="vgg16" height="400" src="images/VGG16.png">
 </p>
 
 
