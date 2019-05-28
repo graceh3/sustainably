@@ -5,7 +5,7 @@ Recommend sustainable alternatives to popular fast-fashion handbags based on sty
 ***
 ## Motivation
 
-
+Introduce consumers to sustainable shopping by taking popular brands and offering sustainable alternatives. 
 
 
 
