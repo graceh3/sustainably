@@ -8,14 +8,16 @@ import requests
 import urllib.request
 
 
-def get_bag_info(url, bag_type, img_directory, counter_start):
+def get_bag_info(url, bag_type, img_directory, counter_start, is_ethical, source):
     '''
     PARAMETERS
     ----------
-    - url : str of page url
+    - url : str format of page url
     - bag_type : str format of bag type
     - img_directory : str format of local directory for saved images
     - counter_start : int counter start value for file naming convention
+    - is_ethical : int/boolean whether source is ethical or not
+    - source : str format of website source
 
     OUTPUT
     ----------
@@ -54,26 +56,31 @@ def get_bag_info(url, bag_type, img_directory, counter_start):
                 bag_image_urls.append(img.attrs['src'])
         time.sleep(0.25)
 
-    # save bag images to local direcotry
-    print(f'Saving images to {img_directory}.')
-    for i, url in enumerate(bag_image_urls):
-        brandname = bag_brands[i].strip().replace(' ', '')[:3].lower()
-        fname = f'thredup_{brandname}_{counter_start+i}.png'
-        file_name = f'{img_directory}/{fname}'
-        urllib.request.urlretrieve(url, file_name)
-        bag_img_fnames.append(fname)
-
     # format bag data into a dictionary
-    all_data = {'description': bag_names,
+    all_data = {'name': bag_names,
                 'brand': bag_brands,
                 'price': bag_prices,
                 'bag_url': bag_urls,
-                'filename': bag_img_fnames}
+                'img_filename': bag_img_fnames}
 
-    # convert dictionary to dataframe
-    df = pd.DataFrame(all_data)
-    df['label'] = bag_type  # adding bag type to all items in dataframe
+    # make sure you have same number of image urls and bag names
+    if len(bag_image_urls) == len(bag_names):
+        # save bag images to local direcotry
+        print(f'Saving images to {img_directory}.')
+        for i, url in enumerate(bag_image_urls):
+            brandname = bag_brands[i].strip().replace(' ', '')[:3].lower()
+            fname = f'thredup_{brandname}_{counter_start+i}.png'
+            file_name = f'{img_directory}/{fname}'
+            urllib.request.urlretrieve(url, file_name)
+            bag_img_fnames.append(fname)
 
-    print(f'Bag images have been saved to {img_directory}.')
+        # convert dictionary to dataframe
+        df = pd.DataFrame(all_data)
+        df['label'] = bag_type  # adding bag type to all items in dataframe
+        df['is_ethical'] = is_ethical  # boolean value (1 = yes, 0 = no)
+        df['source'] = source
 
-    return df, all_data
+        print(f'Bag images have been saved to {img_directory}.')
+        return df, all_data
+    else:
+        return None
