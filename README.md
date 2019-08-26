@@ -1,4 +1,4 @@
-![Image](sustainably_cover1.png)
+![Image](images/sustainably_cover1.png)
 
 Recommend sustainable alternatives to popular fast-fashion handbags based on style and price similarities using convolutional neural networks (CNN) and feature extraction.
 
