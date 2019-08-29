@@ -18,3 +18,12 @@ def save_src_image_apply(company,short,url):
         return short+"_"+ str(c)+".png"
     except Exception as e:
         return e
+    
+    
+def subdir_len(path):
+    # get all directories 
+    folders = ([name for name in os.listdir(path) if name != '.DS_Store']) 
+    
+    #print item count, followed by folder name
+    for folder in folders:
+        print(len(os.listdir(os.path.join(path,folder))),folder)
