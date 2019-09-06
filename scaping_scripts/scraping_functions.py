@@ -21,7 +21,7 @@ def save_src_image_apply(path,short,url):
     e: error message if file cannot be downloaded
     short_c.png: file name of downloaded img
     '''
-    slp = numpy.random.randint(1,10,size=1)
+    slp = np.random.randint(1,10,size=1)
     time.sleep(slp[0])
     global c
     try:
