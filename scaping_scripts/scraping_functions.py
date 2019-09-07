@@ -4,6 +4,7 @@ import requests
 from io import BytesIO
 import pandas as pd
 import numpy as np
+import os
 
 c = 0
 def save_src_image_apply(path,short,url):
@@ -28,11 +29,12 @@ def save_src_image_apply(path,short,url):
         c += 1
         response = requests.get(url)
         img = Image.open(BytesIO(response.content))
-        image_save_loc = company+short+'_'+str(c)+'.png'
+        image_save_loc = path+short+'_'+str(c)+'.png'
         img.save(image_save_loc, "PNG")
         print("Saved "+short+"_{}".format(c)+".png")
         return short+"_"+ str(c)+".png"
     except Exception as e:
+        print(e)
         return e
     
     
