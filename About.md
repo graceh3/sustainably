@@ -79,7 +79,11 @@ Background-agnostic image recognition to identify bags.
 Filter 
 
 
-
+1. Project description / motivation
+2. Planned approach
+3. What we actually did -> scraping, modelling, deploying
+4. Results
+5. Next steps
 
 
 
