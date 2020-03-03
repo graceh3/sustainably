@@ -76,27 +76,24 @@ After our model was ready and we created feature matrices for all of our ethical
 
 
 1. Motivation
-When it comes to shopping, fast fashion has become the norm.  However, consumers today are becoming aware of the negative impact the fast-fashion industry has not only on the environment but on their workforce as well.  Over the years, we’ve seen a growth of sustainable options, but not everyone has the time nor the patience to shop around for the perfect piece. 
+When it comes to shopping, fast fashion has become the norm.  However, consumers today are becoming aware of the negative impact the fast-fashion industry has not only on the environment but on their workforce as well.  Over the years, we’ve seen a growth of sustainable options, but not everyone has the time nor the patience to conduct their own research and  shop around for the perfect piece. 
 
 This is where GoodTwin comes in.  We decided the best way to help people be more responsible is to make being responsible the easy option. 
-We built a neural-network-based recommendation system that allows users to input an image of a bag that they love and outputs sustainable alteratives that are most similar in style and design to the image input.  With our platform, we hope to make sustainable shopping the easy, default choice for everyone. 
+We built a neural-network-based recommendation system that takes in an image of a bag that a user loves and outputs sustainable alteratives that are similar in style and design.  With our platform, we hope to make sustainable shopping the go-to choice for everyone. 
 
-While our beta concept works only on bags, we plan to include other product categories such as shoes and clothings.
+While our beta concept works only on bags (because we found bag image to be the most consistent across brands), we plan to expand into other product categories such as shoes and clothings in the near future.
 
 2. Plan
-At a high level, we knew that there would be several major components to this project:
-(a) Decide on a product (bags) - we decided to work with a single product that is photographed most consistently across brands for our proof of concept which we found to be bags. Items such as shirts would require a more complicated image recognition model to account for the different ways in which a shirt would be presented - they can be presented as a lay-flat or on a model. 
-(b) Conduct research on ethical brands - we needed a reliable data source for information on ethical brands that sell bags in order to consolidate all the data.
+At a high level, 
+(a) Conduct research on ethical brands - we needed a reliable data source for information on ethical brands that sell bags in order to consolidate all the data.
 (c) Get data - 
-(d) Work with a deep-learning model to extract image features - 
+(d) train the model - we worked with a deep-learning model to extract image features
 (e) Determine a similarity metric - 
 (f) Design website & deploy model - 
 
-3. Our Steps (scraping, modelling, deploying)
+3. Our Results
 
-4. Our Results
-
-5. Our Next Steps
+4. Our Next Steps
 - Deconstruct some of the bag categories into more granular groups for more accurate features.
 - Background-agnostic image recognition 
 - Include price as a dimension in recommendation, either as a filter or sort feature as a layer above the results.
