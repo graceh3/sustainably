@@ -84,7 +84,7 @@ We built a neural-network-based recommendation system that takes in an image of 
 While our beta concept works only on bags, we plan to expand into other product categories such as shoes and clothings in the near future.
 
 2. Plan 
-(a) Research ethical brands - we needed a reliable data source for information on ethical brands that sell bags in order to consolidate all the data.
+(a) Research ethical brands - we relied on the robust rating system of Good On You to determine which ethical brands to recommend. They've rated over 2k brands on dimensions aroud how companies treat their workers, the environment, and animals.
 (c) Get data - 
 (d) Train the model - we worked with a deep-learning model to extract image features
 (e) Determine a similarity metric - 
