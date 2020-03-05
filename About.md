@@ -81,11 +81,11 @@ When it comes to shopping, fast fashion has become the norm.  However, consumers
 This is where GoodTwin comes in.  We decided the best way to help people be more responsible is to make being responsible the easy option. 
 We built a neural-network-based recommendation system that takes in an image of a bag that a user loves and outputs sustainable alteratives that are similar in style and design.  With our platform, we hope to make sustainable shopping the go-to choice for everyone and in turn push the fashion industry to do better by the environment and their people.
 
-While our beta concept works only on bags, we plan to expand into other product categories such as shoes and clothings in the near future.
+While our beta concept works only on bags, we plan to expand into other product categories such as shoes and clothing in the near future.
 
 2. Plan 
-(a) Research ethical brands - we relied on the robust rating system of Good On You to determine which ethical brands to recommend. They've rated over 2k brands on dimensions aroud how companies treat their workers, the environment, and animals.
-(c) Get data - 
+(a) Research ethical brands - we relied on the robust rating system of Good On You to determine which ethical brands to recommend. They've rated over 2k brands on how companies treat their workers, the environment, and animals.
+(c) Get data - using Selenium and requests, we scraped over 10 different websites to obtain bag images and its data (price, description, url, color) to train our deep learning model and create our ethical bags database.
 (d) Train the model - we worked with a deep-learning model to extract image features
 (e) Determine a similarity metric - 
 (f) Design website & deploy model - 
