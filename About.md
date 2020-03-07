@@ -73,8 +73,6 @@ After our model was ready and we created feature matrices for all of our ethical
 
 
 ***
-
-
 1. Motivation
 When it comes to shopping, fast fashion has become the norm.  However, consumers today are becoming aware of the negative impact the fast-fashion industry has not only on the environment but on their workforce as well.  Over the years, we’ve seen a growth of sustainable options, but not everyone has the time nor the patience to conduct their own research and shop around for the perfect piece. 
 
@@ -86,7 +84,7 @@ While our beta concept works only on bags, we plan to expand into other product 
 2. Plan 
 (a) Research ethical brands - we relied on the robust rating system of Good On You to determine which ethical brands to recommend. They've rated over 2k brands on how companies treat their workers, the environment, and animals.
 (c) Get data - using Selenium and requests, we scraped over 10 different websites to obtain bag images and its data (price, description, url, color) to train our deep learning model and create our ethical bags database.
-(d) Train the model - we worked with a deep-learning model to extract image features
+(d) Train the model - we fine-tuned a pre-trained VGG16 model (with ImageNet weights) to classify the images into one of eight bag categories (backpacks, tote bags, weekenders, shoulder bags, clutches, circle bags, bucket bags, belt bags) in order to group the most similar bags together.
 (e) Determine a similarity metric - 
 (f) Design website & deploy model - 
 
