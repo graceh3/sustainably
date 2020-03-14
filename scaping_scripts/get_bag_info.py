@@ -1,3 +1,4 @@
+### WORKS ONLY FOR THREDUP URLS ###
 # helper function to get bag info and locally save bag images
 
 import pandas as pd
