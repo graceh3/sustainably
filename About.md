@@ -82,7 +82,7 @@ We built a neural-network-based recommendation system that takes in an image of 
 While our beta concept works only on bags, we plan to expand into other product categories such as shoes and clothing in the near future.
 
 2. Plan 
-(a) Research ethical brands - we relied on the robust rating system of Good On You to determine which ethical brands to recommend. They've rated over 2k brands on how companies treat their workers, the environment, and animals.
+(a) Research ethical brands - we relied on the robust rating system of Good On You to identify which brands to recommend. Good On You has rated over 2,000 brands based on how companies treat their workers, the environment, and animals and created an easy-to-understand rating system of 'We avoid', 'Not good enough', 'It's a start', 'Good', and 'Great'.  
 (c) Get data - using Selenium and requests, we scraped over 10 different websites to obtain bag images and its data (price, description, url, color) to train our deep learning model and create our ethical bags database.
 (d) Train the model - we fine-tuned a pre-trained VGG16 model (with ImageNet weights) to classify the images into one of eight bag categories (backpacks, tote bags, weekenders, shoulder bags, clutches, circle bags, bucket bags, belt bags) in order to group the most similar bags together.
 (e) Determine a similarity metric - 
