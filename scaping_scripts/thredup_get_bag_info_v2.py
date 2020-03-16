@@ -1,5 +1,13 @@
 ### WORKS ONLY FOR THREDUP URLS ###
 # helper function to get bag info and locally save bag images
+import pandas as pd
+import numpy as np
+import time
+from bs4 import BeautifulSoup
+import requests
+import urllib.request
+
+
 def get_bag_info(url, bag_type, img_directory, counter_start, is_ethical, source):
     '''
     PARAMETERS
